@@ -68,9 +68,9 @@ namespace MouseMapper
             // 
             // launchButton
             // 
-            this.launchButton.Location = new System.Drawing.Point(741, 13);
+            this.launchButton.Location = new System.Drawing.Point(728, 13);
             this.launchButton.Name = "launchButton";
-            this.launchButton.Size = new System.Drawing.Size(46, 34);
+            this.launchButton.Size = new System.Drawing.Size(59, 34);
             this.launchButton.TabIndex = 2;
             this.launchButton.Text = "OFF";
             this.launchButton.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@ namespace MouseMapper
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(595, 22);
+            this.label1.Location = new System.Drawing.Point(582, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 17);
             this.label1.TabIndex = 3;
