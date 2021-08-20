@@ -33,6 +33,8 @@ namespace MouseMapper
             this.label1 = new System.Windows.Forms.Label();
             this.thickBox = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.strengthBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thickBox)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +56,7 @@ namespace MouseMapper
             this.strengthBox.Size = new System.Drawing.Size(120, 22);
             this.strengthBox.TabIndex = 0;
             this.strengthBox.Value = new decimal(new int[] {
-            1,
+            100,
             0,
             0,
             0});
@@ -63,7 +65,7 @@ namespace MouseMapper
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 14);
+            this.label1.Location = new System.Drawing.Point(15, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 17);
             this.label1.TabIndex = 1;
@@ -90,11 +92,34 @@ namespace MouseMapper
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 43);
+            this.label2.Location = new System.Drawing.Point(15, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Line Thickness";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "curve",
+            "line",
+            "circle"});
+            this.comboBox1.Location = new System.Drawing.Point(209, 70);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "Circle";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Paint Type";
             // 
             // Settings
             // 
@@ -102,6 +127,8 @@ namespace MouseMapper
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(341, 628);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.thickBox);
             this.Controls.Add(this.label1);
@@ -127,5 +154,7 @@ namespace MouseMapper
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown thickBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
